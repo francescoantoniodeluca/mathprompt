@@ -9,7 +9,6 @@ Having a clear idea of what a software application should do, and then writing t
 Another risk is writing more than necessary and adding unnecessary constraints. Today, AI is practically one of the best programming assistants available, and we do not want to limit its potential. For this reason, it is important to provide only the information that is truly necessary.
 
 Considering the problems described above, I would like to share, as an example, a new way to write a specification. In the file ./lean_spec.lean, I describe an abstract algorithm that:
-
 * starts from samples in a semantic domain D1 and creates a differentiation graph;
 * uses trans-domain relations to create inductive sets of question-answer pairs from domain D2 for each question-answer pair in the constructed graph in domain D1;
 * optimizes selected performance indices.
@@ -17,6 +16,8 @@ Considering the problems described above, I would like to share, as an example, 
 The purpose of this algorithm is to correlate data from one domain to another through a questionnaire. For example, it could help students identify the most suitable course of study, or help users find the psychologist who best fits their needs.
 
 An LLM API could be used either to choose the questions or to generate them directly, as well as to select the inductive set. Depending on the specific requirements of the application, these elements can be added either in Lean or in verbal form, according to the complexity of the system and its scalability needs.
+
+Scalability is one of the main advantages, as it allows you to combine specifications and create new types by reusing types from different sources.
 
 Some examples of applications will soon be available on my GitHub account.
 
