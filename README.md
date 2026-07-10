@@ -19,6 +19,10 @@ An LLM API could be used either to choose the questions or to generate them dire
 
 Scalability is one of the main advantages, as it allows you to combine specifications and create new types by reusing types from different sources.
 
+Have you ever asked an AI questions about an algorithm that it helped you develop in order to verify its coherence or confirm your expectations? Sometimes the AI is overly assertive, or it fails to understand your question when it is inconsistent with the implemented algorithm. This kind of confirmation is one of the most important feedback mechanisms in vibe coding.
+
+Another advantage of using Lean is the ability to validate your abstraction by expressing the intended properties as theorems. If the abstraction is not valid, coherent, or does not accurately capture your intent, the theorem will be false, and neither you nor the LLM will be able to prove it. This provides a rigorous form of feedback that goes beyond conversational confirmation. As a result, you can practice vibe coding while greatly reducing the risk of inconsistencies between the implementation and the intended behavior.
+
 Some examples of applications will soon be available on my GitHub account.
 
 I will also add another file, ./lean_spec.lean.md, which contains the Lean specification enriched with Markdown comments to make it easier to understand.
